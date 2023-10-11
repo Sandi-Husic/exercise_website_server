@@ -5,6 +5,7 @@ from blueprints.about import about_bp
 from blueprints.contact import contact_bp
 from blueprints.portfolio import portfolio_bp
 from blueprints.resume import resume_bp
+from blueprints.cms import cms_bp
 
 
 def create_app():
@@ -16,6 +17,7 @@ def create_app():
     app.register_blueprint(contact_bp)
     app.register_blueprint(portfolio_bp)
     app.register_blueprint(resume_bp)
+    app.register_blueprint(cms_bp)
 
     @app.route("/", methods=["GET"])
     def index():
