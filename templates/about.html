@@ -22,14 +22,13 @@
       <div class="col-lg-4 text-center">
         <img
           src="{{ active_entry.imageUrl if active_entry else url_for('static', filename='img/profile-img.jpg') }}"
-          alt="[Your Name]"
+          alt="Sandi"
           class="img-fluid rounded-circle w-50"
         />
       </div>
       <div class="col-lg-8">
         <p class="lead">
-          {{ active_entry.additionalInfo if active_entry else "Hello! I'm [Your
-          Name], a passionate individual..." }}
+          {{ active_entry.additionalInfo if active_entry else "Hello! I'm Sandi, a passionate individual..." }}
         </p>
       </div>
     </div>
